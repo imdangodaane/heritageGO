@@ -2,47 +2,49 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon" />
 
-    <title>Héritage GO is the community for heritage lovers.</title>
+  <title>Héritage GO is the community for heritage lovers.</title>
 </head>
 
 <body>
-    <div class="header_section"></div>
+  <div class="header">
+    <div class="header__flex-box">
 
-    <div class="flex-box">
+      <div class="header__flex-box__flex-left">
+      </div>
 
-        <div style="flex-grow: 1;" class="flex-item">
+      <div class="header__flex-box__flex-mid">
 
-        </div>
+          <div>
+            <img class="header__flex-box__flex-mid__logo" src='./media/logo.png' />
+          </div>
 
-        <div style="flex-grow: 2;">
-            <div class="flex-inside">
-
-                <div style="align-self: center;"><img class="logo" src='./media/logo.png' /></div>
-
-                <div class="flex-box">
-                    <div>
-                        <strong>Ho Chi Minh City</strong></br>
-                        <span>Vietnam</span>
-                    </div>
-                    <div style="font-size: 24px;"><i class="far fa-compass fa-spin"></i></div>
-                </div>
-
+          <div class="header__flex-box__flex-mid__area-section">
+            <div style="text-align: center;">
+              <strong class="primary_area_name">Ho Chi Minh City</strong></br>
+              <span class="secondary_area_name">Vietnam</span>
             </div>
-        </div>
+            <div class="header__flex-box__flex-mid__area-section__compass-icon">
+              <i class="far fa-compass fa-spin"></i>
+            </div>
+          </div>
 
-        <div style="flex-grow: 1;" class="flex-item">
-            <div class="login_button">Log In</div>
-        </div>
+      </div>
+
+      <div class="header__flex-box__flex-right">
+        <button type="button" class="header__flex-box__flex-right__login_button">Log In</button>
+      </div>
 
     </div>
+    <div class="header__border-bottom"></div>
+  </div>
 </body>
 
 </html>

@@ -1,56 +1,77 @@
-.header_section {
-    height: 80px;
-    color: #262626;
-    background-color: black;
+.header {
+  height: 80px;
+  color: #262626;
 }
 
-.logo {
-    width: 100px;
-    max-height: 100%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+.header__border-bottom {
+  border-bottom: 1px solid black;
+  opacity: 0.0975;
+}
+
+.header__flex-box__flex-mid__logo {
+  width: 100px;
+  max-height: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  align-self: left;
 }
 
 .primary_area_name {
-    font-family: "Arial", monospace, serif, sans-serif;
-    font-size: 18;
-    text-align: center;
+  font-family: "Arial";
+  font-size: 18px;
 }
 
 .secondary_area_name {
-    font-family: "Arial", monospace, serif, sans-serif;
-    font-size: 14;
-    text-align: center;
+  font-family: "Arial";
+  font-size: 14px;
 }
 
-.compass_icon {
-    width: 24px;
-    height: 24px;
-    max-width: 24px;
-    max-height: 24px;
-    align-self: center;
+.header__flex-box__flex-mid__area-section__compass-icon {
+  font-size: 24px;
+  margin-left: 5px;
+  margin-top: -1px;
 }
 
-.login_button {
-    font-family: "Arial", monospace, serif, sans-serif;
-    font-size: 14;
-    text-align: center;
-    border-radius: 3px;
-    border-color: #e6e6e6;
+.header__flex-box__flex-right__login_button {
+  border: 0.1px opacity gray;
+  border-radius: 5px;
+  background-color: inherit;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  padding: 3% 5%;
 }
 
-.flex-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.header__flex-box__flex-right__login_button:hover {
+  background-color: #e7e7e7;
 }
 
-.flex-item {
-    text-align: center;
+.header__flex-box {
+  display: flex;
+  flex-direction: row;
 }
 
-.flex-inside {
-    display: flex;
-    justify-content: space-between;
+.header__flex-box__flex-left {
+  flex-grow: 1;
+}
+
+.header__flex-box__flex-right {
+  flex-grow: 1;
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 24px;
+}
+
+.header__flex-box__flex-mid {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 2;
+}
+
+.header__flex-box__flex-mid__area-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0px;
 }
