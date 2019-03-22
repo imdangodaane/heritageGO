@@ -1,11 +1,8 @@
 .header {
   height: 80px;
   color: #262626;
-}
-
-.header__border-bottom {
-  border-bottom: 1px solid black;
-  opacity: 0.0975;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+  margin: auto;
 }
 
 .header__flex-box__flex-mid__logo {
@@ -14,6 +11,12 @@
   margin-top: 1%;
   margin-bottom: 1%;
   align-self: left;
+  transition: all 0.1s ease-in-out;
+}
+
+.header__flex-box__flex-mid__logo:hover {
+  transform: scale(1.1);
+  transform-origin: center;
 }
 
 .primary_area_name {
@@ -45,6 +48,16 @@
   background-color: #e7e7e7;
 }
 
+.header__flex-box__flex-right__login_button_invi {
+  display: none;
+  border: 0.1px opacity gray;
+  border-radius: 5px;
+  background-color: inherit;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 3% 5%;
+}
+
 .header__flex-box {
   display: flex;
   flex-direction: row;
@@ -74,4 +87,36 @@
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 0px;
+}
+
+@keyframes spin {
+  from {}
+  to {transform: rotate(360deg);}
+}
+
+.compass-spin {
+  animation: spin 1.5s linear 0s infinite forwards;
+}
+
+@media (max-width: 600px) {
+  .header__flex-box {
+    text-align: center;
+  }
+  .header__flex-box__flex-left {
+    display: none;
+  }
+  .header__flex-box__flex-right {
+    display: none;
+  }
+  .header__flex-box__flex-mid {
+    width: 100%;
+  }
+  .header__flex-box__flex-right__login_button_invi {
+    display: inherit;
+    margin-right: 24px;
+    padding: inherit;
+  }
+  .header__flex-box__flex-mid__area-section__compass-icon {
+    margin-right: 24px;
+  }
 }
