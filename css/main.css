@@ -129,15 +129,15 @@
     display: inherit;
   }
 
-  .header__flex-box__flex-mid__logo {
-    margin-left: 24px;
-    width: 20vw;
-  }
-
   .primary_area_name,
   .secondary_area_name,
   .compass-spin {
     white-space: nowrap;
+  }
+
+  .header__flex-box__flex-mid__logo {
+    margin-left: 24px;
+    width: 20vw;
   }
 
   .primary_area_name {
