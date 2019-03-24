@@ -4,6 +4,13 @@
 <head>
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <!-- BOOTSTRAP CDN  -->
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+  />
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,17 +37,65 @@
               <span class="secondary_area_name">Vietnam</span>
             </div>
             <i class="far fa-compass compass-spin compass-align-resize"></i>
-            <button type="button" class="header__flex-box__flex-right__login_button_invi">Log In</button>
+            <!-- LOGIN BUTTON -->
+            <button
+              type="button"
+              class="header__flex-box__flex-right__login_button_invi"
+              data-toggle="modal"
+              data-target="#login-button">
+              Log In
+            </button>
+            <!-- MODAL FOR LOGIN BUTTON -->
+            <div class="modal fade" id="login-button" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Log in</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <input type="email" class="form-input" id="email-address" placeholder="Email address">
+                    <br>
+                    <input type="password" class="form-input" id="password" placeholder="Password">
+                  </div>
+                  <button type="button" class="btn btn-primary form-login-button">Login</button>
+                </div>
+              </div>
+            </div>
+          <!-- END OF MODAL FOR LOGIN BUTTON -->
           </div>
-
+      <!-- END OF FLEX-BOX FLEX-MID -->
       </div>
 
       <div class="header__flex-box__flex-right">
-        <button type="button" class="header__flex-box__flex-right__login_button">Log In</button>
+        <button
+          type="button"
+          class="header__flex-box__flex-right__login_button"
+          data-toggle="modal"
+          data-target="#login-button">
+          Log In
+        </button>
       </div>
 
     </header>
   <!-- </header> -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+  crossorigin="anonymous">
+</script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous">
+</script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous">
+</script>
 </body>
 
 </html>
