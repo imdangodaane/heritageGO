@@ -72,6 +72,7 @@
 .header__flex-box__flex-right__login_button {
   background-color: inherit ;
   border: 1px solid rgba(0, 0, 0, 0.0975);
+  border-radius: 3px;
   padding: 3px 10px;
   margin-right: 24px;
   margin-left: 24px;
@@ -164,4 +165,79 @@
 .form-login-button {
   display: block;
   margin: 15px;
+}
+
+/* update WP10-13 */
+
+.login-form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.input-wrapper {
+  height: 2.8em;
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+.input-wrapper input {
+  padding: 20px 0px;
+  height: 25px;
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px #007bff;
+  box-sizing:  border-box;
+  transition: all .3s linear;
+}
+
+.input-wrapper input:focus {
+  border-bottom: solid 2px #007bff;
+  outline: none;
+}
+
+.floating-label {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.floating-label label {
+  position: absolute;
+  opacity: 0.6;
+  top: 10px;
+  left: 0;
+  color: #000;
+  margin-top: -1px;
+  transition: all .3s ease;
+}
+
+.floating-label input:focus + label {
+  transform: translateY(-20px);
+  opacity: 1;
+  font-size: .95em;
+  color: #007bff;
+}
+
+.floating-label input:valid + label {
+  transform: translateY(-20px);
+  opacity: 1;
+  font-size: .95em;
+  color: #007bff;
+}
+
+.login-form button {
+  margin-top: 30px;
+  width: 100%;
+}
+
+#lock-icon, #key-icon {
+  right: 0;
+  top: 30%;
+  margin-left: -3%;
+  position: absolute;
 }
