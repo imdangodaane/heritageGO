@@ -21,31 +21,25 @@
 </head>
 
 <body>
-    <!-- HEADER -->
+  <!-- <header class="header"> -->
+    <div class="header">
+    </div>
     <header class="header__flex-box">
 
-      <!-- LEFT AREA -->
       <div class="header__flex-box__flex-left">
-        <!-- NOTHING IN LEFT -->
       </div>
-      <!-- END OF LEFT AREA -->
 
-      <!-- MID AREA -->
       <div class="header__flex-box__flex-mid">
-          <!-- LOGO -->
+
           <img class="header__flex-box__flex-mid__logo" src='./media/logo.png' />
 
-          <!-- AREA SECTION -->
           <div class="header__flex-box__flex-mid__area-section">
             <div style="text-align: center;">
-              <!-- PRIMARY AREA NAME AND SECONDARY AREA NAME -->
               <strong class="primary_area_name">Ho Chi Minh city</strong></br>
               <span class="secondary_area_name">Vietnam</span>
             </div>
-
             <i class="far fa-compass compass-spin compass-align-resize"></i>
-            <!-- INVISIBLE LOGIN BUTTON -->
-            <!-- THIS BUTTON ONLY SHOW WHEN PAGE's WIDTH UNDER 600px -->
+            <!-- LOGIN BUTTON -->
             <button
               type="button"
               class="header__flex-box__flex-right__login_button_invi"
@@ -81,13 +75,11 @@
                 </div>
               </div>
             </div>
-            <!-- END OF MODAL FOR LOGIN BUTTON -->
+          <!-- END OF MODAL FOR LOGIN BUTTON -->
           </div>
-          <!-- END OF AREA SECTION -->
+      <!-- END OF FLEX-BOX FLEX-MID -->
       </div>
-      <!-- END OF MID AREA -->
 
-      <!-- RIGHT AREA -->
       <div class="header__flex-box__flex-right">
         <button
           type="button"
@@ -97,53 +89,15 @@
           Log In
         </button>
       </div>
-      <!-- END OF RIGHT AREA -->
+
     </header>
-    <!-- END OF HEADER -->
-<!-- ============================================================================================================================== -->
+  <!-- </header> -->
+  <!-- ============================================================================================================================== -->
     <!-- SECTION AREA -->
-    <section class="section">
-      <aside class="section__aside-left"></aside>
+    <div id="main-content">
+    <!-- END OF SECTION AREA -->
+    </div>
 
-      <article class="post">
-        <div class="post__title">
-          <img class="post__title__avatar" src="./media/na.png" />
-          <div class="post__title__information">
-            <div class="post__title__information__caption">
-              <span style="font-weight: 500; font-size: 18px">Caption of the photo</span>
-              <i class="fas fa-language fa-lg"></i>
-            </div>
-            <div class="post__title__information__location">
-              <i class="fas fa-map-marker-alt"></i><span style="margin-left: 5px;">Location</span>
-              <i class="far fa-clock" style="margin-left: 20px;"></i><span style="margin-left: 5px;">Date</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="post__image">
-          <img src="./media/ainbo.jpg" />
-        </div>
-
-        <div class="post__interact">
-          <div class="post__interact__user-react">
-            <i class="fas fa-heart fa-lg"></i><strong style="margin-left: 5px;">0</strong>
-            <i class="fas fa-comment fa-lg" style="margin-left: 30px;"></i></i><strong style="margin-left: 5px;">0</strong>
-            <i class="fas fa-camera fa-lg" style="margin-left: 30px;"></i><strong style="margin-left: 5px;">0</strong>
-          </div>
-          <i class="fas fa-bookmark fa-lg" style="margin-right: 1rem; margin-bottom: 1rem;"></i>
-        </div>
-        <!-- <hr class="mb-4"> -->
-        <div class="post__comment">
-          <div class="input-wrapper post__comment__input">
-            <input type="text" placeholder=" Write a comment">
-          </div>
-          <i class="fab fa-telegram-plane" style="margin-right: 30px; color: rgba(0, 0, 0, 0.3);"></i>
-        </div>
-        <hr>
-      </article>
-
-      <aside class="section__aside-right"></aside>
-    </section>
     <!-- END OF SECTION AREA -->
 
   <!-- JAVA SCRIPT SECTION -->
@@ -152,6 +106,7 @@
     integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
     crossorigin="anonymous">
   </script>
+  <script src="js/heritagego-service.1.0.0.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -163,17 +118,8 @@
     crossorigin="anonymous">
   </script>
 
-  <script>
-    $('#lock-icon').click(function () {
-      if($('#password').prop("type") == "password"){
-        $('#password').prop("type", "text");
-        $('#lock-icon').prop("class", "fas fa-unlock");
-      }else{
-        $('#password').prop("type", "password");
-        $('#lock-icon').prop("class", "fas fa-lock");
-      }
-    })
-  </script>
+  <script src="js/main.js"></script>
+  <script src="js/toggle-password.js"></script>
   <!-- END OF JAVA SCRIPT SECTION -->
 </body>
 
