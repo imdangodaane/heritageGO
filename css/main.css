@@ -4,9 +4,9 @@
   top: 0;
   width: 100%;
   /* background: hsla(0, 100%, 100%, 0.95); */
-  background: rgba(255, 255, 255, 1);
+  background: rgba(250, 250, 250, 1);
   /* -webkit-backdrop-filter: blur(5px); */
-  filter: blur(3px) opacity(0.9);
+  filter: opacity(0.93) blur(0.01rem);
   z-index: 1;
 }
 
