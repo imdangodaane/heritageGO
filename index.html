@@ -2,6 +2,18 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <!-- Description for SEO, introduce the page in the search engine interface -->
+  <meta name="description" content="Héritage GO is the community for heritage lovers">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Setup viewport for responsive window -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
   <!-- BOOTSTRAP CDN  -->
@@ -12,45 +24,52 @@
   crossorigin="anonymous"
   />
 
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8">
-  <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon" />
+  <!-- favicon for various platform -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
 
   <title>Héritage GO is the community for heritage lovers.</title>
 </head>
 
 <body>
+  <!-- BLURRED HEADER -->
   <div class="header" id="blur-header">
-    <div id="main-content-blurred">
+    <div id="main-content-blurred" class="blurred">
     </div>
   </div>
+  <!-- END OF BLURRED HEADER -->
+
   <!-- HEADER -->
   <header class="header__flex-box">
     <div class="header__flex-box__flex-left">
     </div>
 
+    <!-- FLEX BOX MID -->
     <div class="header__flex-box__flex-mid">
-        <img class="header__flex-box__flex-mid__logo" src='./media/logo.png' />
+      <img class="header__flex-box__flex-mid__logo" src='./media/logo.png' />
 
-        <div class="header__flex-box__flex-mid__area-section">
-          <div style="text-align: center;">
-            <strong class="primary_area_name">Ho Chi Minh city</strong></br>
-            <span class="secondary_area_name">Vietnam</span>
-          </div>
-
-          <i class="far fa-compass compass-spin compass-align-resize"></i>
-
-          <!-- LOGIN BUTTON -->
-          <button
-            type="button"
-            class="header__flex-box__flex-right__login_button_invi"
-            data-toggle="modal"
-            data-target="#LoginModal">
-            Log In
-          </button>
+      <div class="header__flex-box__flex-mid__area-section">
+        <div style="text-align: center;">
+          <strong class="primary_area_name">Ho Chi Minh city</strong></br>
+          <span class="secondary_area_name">Vietnam</span>
         </div>
+        <i class="far fa-compass compass-spin compass-align-resize"></i>
+
+        <!-- INVISIBLE LOGIN BUTTON -->
+        <button
+          type="button"
+          class="header__flex-box__flex-right__login_button_invi"
+          data-toggle="modal"
+          data-target="#LoginModal">
+          Log In
+        </button>
+        <!-- END OF INVISIBLE LOGIN BUTTON -->
+      </div>
     </div>
+    <!-- END OF FLEX-BOX FLEX-MID -->
 
     <div class="header__flex-box__flex-right">
       <button
@@ -70,27 +89,37 @@
       <aside class="section__aside-left"></aside>
 
       <article class="post">
-        <!-- TITLE -->
+        <!-- POST TITLE -->
         <div class="post__title">
           <img class="post__title__avatar" src="./media/na.png" />
           <div class="post__title__information">
             <div class="post__title__information__caption">
               <span style="font-weight: 500; font-size: 18px">Caption of the photo</span>
-              <i class="fas fa-language fa-lg post__title__information__translate-icon"></i>
+
+              <div class="drop-down__menu">
+                <i id="triggerDropdown" onclick="" class="fas fa-language fa-lg post__title__information__translate-icon"></i>
+
+                <div id="myDropdown" class="dropdown-content" style="display: none">
+                  <p class="dropdown-language">lang1</p>
+                  <p class="dropdown-language">lang2</p>
+                  <p class="dropdown-language">lang3</p>
+                </div>
+              </div>
             </div>
+
             <div class="post__title__information__location">
               <i class="fas fa-map-marker-alt"></i><span id="location" style="margin-left: 5px;">Location</span>
               <i class="far fa-clock" style="margin-left: 20px;"></i><span id="date" style="margin-left: 5px;">Date</span>
             </div>
           </div>
         </div>
-        <!-- END OF TITLE -->
+        <!-- END OF POST TITLE -->
 
         <div class="post__image">
           <img src="" />
         </div>
 
-        <!-- INTERACT -->
+        <!-- POST INTERACT -->
         <div class="post__interact">
           <div class="post__interact__user-react">
             <i class="fas fa-heart fa-lg"></i><strong style="margin-left: 5px;">0</strong>
@@ -99,16 +128,16 @@
           </div>
           <i class="fas fa-bookmark fa-lg" style="margin-right: 1rem; margin-bottom: 1rem;"></i>
         </div>
-        <!-- END OF INTERACT -->
+        <!-- END OF POST INTERACT -->
 
-        <!-- COMMENT -->
+        <!-- POST COMMENT -->
         <div class="post__comment">
           <div class="input-wrapper post__comment__input">
             <input type="text" placeholder=" Write a comment">
           </div>
           <i class="fab fa-telegram-plane" style="margin-right: 30px; color: rgba(0, 0, 0, 0.3);"></i>
         </div>
-        <!-- END OF COMMENT -->
+        <!-- END OF POST COMMENT -->
       </article>
 
       <aside class="section__aside-right"></aside>
@@ -164,7 +193,6 @@
     crossorigin="anonymous">
   </script>
 
-  <!-- <script src="js/blur-header.js"></script> -->
   <script src="js/main.js"></script>
   <script src="js/toggle-password.js"></script>
   <!-- END OF JAVA SCRIPT SECTION -->
